@@ -152,9 +152,27 @@ public class AulaSenai {
 
 			Collections.sort(lista);
 			System.out.println(lista.get(qtdValores-1));
+		}
 
+		public static void Exercicio9()
+		{
+			Scanner scan = new Scanner(System.in);
 
+			String palavra = scan.nextLine();
 
+			String array[] = palavra.split(" ");
+			int count = 0;
+
+			for (String string : array) {
+				count++;
+			}
+
+			if (count % 2 != 0)
+				System.out.println(array[count/2]);
+			else
+				System.out.println(array[(int)(count/2 - 1)] + " " + array[(int)(count/2)]);
+
+			scan.close();
 		}
 	}
 }
