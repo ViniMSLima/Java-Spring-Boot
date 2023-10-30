@@ -1,6 +1,7 @@
 package com.nininho.javaapi;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -129,6 +130,31 @@ public class AulaSenai {
 				lista.add(funcionario);
 				System.out.println(funcionario.nome);
 			}
+		}
+
+		public static void Exercicio8()
+		{
+			Scanner scan = new Scanner(System.in);
+
+			ArrayList<Float> lista = new ArrayList<Float> (); 
+
+			System.out.print("Quantidade de valores\n> ");
+
+			int qtdValores = scan.nextInt();
+			
+			for(int i=0; i < qtdValores; i++)
+			{
+				System.out.print("\nValor" + (i+1) + "\n> ");
+				lista.add(scan.nextFloat());
+			}
+
+			scan.close();
+
+			Collections.sort(lista);
+			System.out.println(lista.get(qtdValores-1));
+
+
+
 		}
 	}
 }

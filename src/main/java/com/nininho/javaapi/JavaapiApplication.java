@@ -12,7 +12,7 @@ public class JavaapiApplication {
 	public static void main(String[] args) {
 		// SpringApplication.run(JavaapiApplication.class, args);
 
-		AulaSenai.Exercicios.Exercicio7();
+		AulaSenai.Exercicios.Exercicio8();
 
 	}
 }
