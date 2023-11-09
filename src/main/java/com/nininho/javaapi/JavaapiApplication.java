@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Date;
 
+import org.springframework.boot.SpringApplication;
 // import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,9 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JavaapiApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(JavaapiApplication.class, args);
+		SpringApplication.run(JavaapiApplication.class, args);
 
-		AulaSenai.Exercicios.Exercicio9();
+		// AulaSenai.Exercicios.Exercicio9();
 
 	}
 }
